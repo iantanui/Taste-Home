@@ -50,7 +50,61 @@ main {
   padding: 16px;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    background-color: rgba(18, 50, 122, 0.999);
+}
+
+.image, .card {
+    flex: 1;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+.card .btn {
+    padding: 12px;
+    border-radius: 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     margin-top: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+    main {
+        padding: 8px;
+    }
+    .home {
+        flex-direction: column;
+    }
+
+    .image, .card {
+        max-width: 100%;
+    }
+
+    .card {
+        padding: 40px;
+    }
+    
 }
