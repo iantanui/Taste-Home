@@ -115,6 +115,53 @@ footer {
   width: 100%;
 }
 
+.service-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.service-details .image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.service-details .image img {
+  width: 100%;
+  height: auto;
+}
+
+.service-details .content {
+  flex: 1;
+  padding: 0 30px;
+}
+
+.meals {
+  margin: 20px;
+}
+
+.recipe-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.recipe-card {
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-card .caption {
+  text-align: center;
+  margin-top: 8px;
+}
+
 @media screen and (max-width: 600px) {
   .logo {
     border-radius: 10px;
@@ -146,5 +193,9 @@ footer {
 
   .services-list ul {
     margin-left: 20%;
+  }
+
+  .recipe-card {
+    width: 400px;
   }
 }
