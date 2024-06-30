@@ -82,9 +82,27 @@ main {
   text-align: center;
 }
 
-h1 {
+h1,
+h2 {
   text-align: center;
   margin-top: 0;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.about-section,
+.services-list {
+  flex: 1;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.services-list ul {
+  margin-left: 30%;
 }
 
 footer {
@@ -92,14 +110,15 @@ footer {
   padding: 8px;
   color: blueviolet;
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
 
 @media screen and (max-width: 600px) {
-  
-
+  .logo {
+    border-radius: 10px;
+  }
   nav ul li {
     margin-left: 20px;
   }
@@ -119,5 +138,13 @@ footer {
 
   .card {
     padding: 40px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .services-list ul {
+    margin-left: 20%;
   }
 }
