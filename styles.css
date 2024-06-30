@@ -18,6 +18,7 @@ nav {
 
 nav .logo {
   width: 100px;
+  border-radius: 4px;
 }
 
 nav ul {
@@ -91,18 +92,27 @@ h2 {
 .main-content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
-.about-section,
+.about-section {
+  flex: 1;
+  margin-left: 20px;
+}
+
 .services-list {
   flex: 1;
-  padding: 8px;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.services-list ul {
-  margin-left: 30%;
+.offers {
+  list-style-type: disc;
+  padding-left: 0;
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 footer {
@@ -117,23 +127,91 @@ footer {
 
 .service-details {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.services {
+  flex: 1;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.services p {
+  text-align: left;
+}
+
+.pricing {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.service-list {
+  padding-left: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-list li {
+  margin-bottom: 10px;
+}
+
+.service-link {
+  display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 20px;
 }
 
-.service-details .image {
-  flex: 1;
-  max-width: 50%;
+.link-btn {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
 }
 
-.service-details .image img {
-  width: 100%;
-  height: auto;
+.link-btn:hover {
+  background-color: blue;
 }
 
-.service-details .content {
-  flex: 1;
-  padding: 0 30px;
+.price-table {
+  margin: auto;
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 0;
+}
+
+.price-table td,
+.price-table th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact-links {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: blue;
+}
+
+.contact-links a:hover {
+  background-color: blueviolet;
 }
 
 .meals {
@@ -197,5 +275,18 @@ footer {
 
   .recipe-card {
     width: 400px;
+  }
+
+  .service-details {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .contact-links {
+    margin-top: 10px;
+  }
+
+  .pricing {
+    margin-bottom: 0;
   }
 }
